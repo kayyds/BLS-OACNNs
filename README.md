@@ -60,5 +60,3 @@ sh scripts/test.sh -p python -d scannet -c semseg-bls-oacnns-v1m1-0-base -n bls_
 ## 📄 License
 This project is released under the MIT License.
 ```
-
-请您完成替换后，检查一下页面排版是否美观（代码是否都在灰色的代码块里）。一切无误后，我们就可以直接开始写那封**给主编的 Cover Letter** 了！
