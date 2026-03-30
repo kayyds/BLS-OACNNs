@@ -23,3 +23,6 @@ conda activate bls_env
 conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia -y
 pip install spconv-cu118
 pip install -r requirements.txt
+## 📊 Data Preparation
+We evaluate our model on the **ScanNet v2** dataset. 
+Please follow the standard Pointcept data preparation pipeline to preprocess the point cloud data and place the processed dataset in the `./data/scannet` folder.
