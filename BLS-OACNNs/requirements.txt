@@ -1,0 +1,16 @@
+numpy
+pyyaml
+tqdm
+tensorboard
+einops
+h5py
+ninja
+scipy
+torch>=2.0.0
+torchvision
+torchaudio
+torch-geometric
+torch_cluster
+torch_scatter
+torch_sparse
+spconv-cu118
