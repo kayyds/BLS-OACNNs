@@ -18,3 +18,8 @@ If you find our work, algorithm, or data helpful in your research, please consid
   year={2026},
   note={Under Review}
 }
+conda create -n bls_env python=3.8 -y
+conda activate bls_env
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia -y
+pip install spconv-cu118
+pip install -r requirements.txt
