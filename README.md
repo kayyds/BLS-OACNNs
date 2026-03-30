@@ -18,12 +18,47 @@ If you find our work, algorithm, or data helpful in your research, please consid
   year={2026},
   note={Under Review}
 }
+```
+
+## 📖 Methodology / Key Algorithms
+To address the quadratic computational bottleneck of attention mechanisms in 3D perception, we propose **BLS-OACNNs**. The core innovation lies in the **BLS-Hybrid Stage strategy**, which systematically substitutes compute-intensive attention modules with our efficient pseudo-inverse-based **BLSBlocks**. This establishes a Native Efficient Design paradigm that scales linearly with scene size while maintaining high segmentation accuracy.
+
+## 🛠️ Environment Setup & Dependencies
+We recommend using Conda for environment setup. Core dependencies include:
+- Python >= 3.8
+- PyTorch >= 2.0.0
+- CUDA >= 11.8
+- `spconv` (Sparse Convolution)
+
+**Example Conda Setup:**
+```bash
 conda create -n bls_env python=3.8 -y
 conda activate bls_env
 conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia -y
 pip install spconv-cu118
 pip install -r requirements.txt
+```
 
 ## 📊 Data Preparation
 We evaluate our model on the **ScanNet v2** dataset. 
 Please follow the standard Pointcept data preparation pipeline to preprocess the point cloud data and place the processed dataset in the `./data/scannet` folder.
+
+## 🚀 Quick Start (Training & Evaluation)
+
+### Training
+To train the BLS-OACNNs model on ScanNet v2 from scratch, run the following command:
+```bash
+sh scripts/train.sh -p python -d scannet -c semseg-bls-oacnns-v1m1-0-base -n bls_oacnns_run
+```
+
+### Evaluation / Testing
+To evaluate the trained model and reproduce our results, use the testing script:
+```bash
+sh scripts/test.sh -p python -d scannet -c semseg-bls-oacnns-v1m1-0-base -n bls_oacnns_run -w model_best
+```
+
+## 📄 License
+This project is released under the MIT License.
+```
+
+请您完成替换后，检查一下页面排版是否美观（代码是否都在灰色的代码块里）。一切无误后，我们就可以直接开始写那封**给主编的 Cover Letter** 了！
