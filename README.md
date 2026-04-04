@@ -1,6 +1,6 @@
 # BLS-OACNNs
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10892345.svg)](https://doi.org/10.5281/zenodo.10892345)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10892348.svg)](https://doi.org/10.5281/zenodo.10892348)
 
 This repository contains the official PyTorch implementation and core experimental data for the paper:
 
