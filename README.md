@@ -1,12 +1,12 @@
 # BLS-OACNNs
 
-[![DOI](https://zenodo.org/badge/xxxxxx.svg)](https://zenodo.org/badge/latestdoi/xxxxxx)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10892345.svg)](https://doi.org/10.5281/zenodo.10892345)
 
 This repository contains the official PyTorch implementation and core experimental data for the paper:
 
 **"Hybrid Broad Learning for Efficient 3D Semantic Segmentation: A Lightweight Approach"**
 
-> **News:** This manuscript is currently under review for publication in ***The Visual Computer*** (Springer Nature). 
+> **News:** This manuscript is currently under review for publication in ***The Visual Computer*** (Springer Nature).
 
 ## 📌 Citation
 If you find our work, algorithm, or data helpful in your research, please consider citing our manuscript:
