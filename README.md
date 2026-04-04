@@ -8,8 +8,6 @@ This repository contains the official PyTorch implementation and core experiment
 
 > **News:** This manuscript is currently under review for publication in ***The Visual Computer*** (Springer Nature).
 
-> **News:** This manuscript is currently under review for publication in ***The Visual Computer*** (Springer Nature).
-
 ## 📌 Citation
 If you find our work, algorithm, or data helpful in your research, please consider citing our manuscript:
 ```bibtex
