@@ -48,14 +48,18 @@ Please follow the standard Pointcept data preparation pipeline to preprocess the
 ### Training
 To train the BLS-OACNNs model on ScanNet v2 from scratch, run the following command:
 ```bash
-sh scripts/train.sh -p python -d scannet -c semseg-bls-oacnns-v1m1-0-base -n bls_oacnns_run
+sh scripts/train.sh -g 1 -d scannet -c semseg-bls-oacnns-v1m1-0-base -n oacnns-scannet
 ```
+-g: Number of GPUs
+-d: Dataset name
+-c: Config file path
+-n: Experiment name
 
-### Evaluation / Testing
-To evaluate the trained model and reproduce our results, use the testing script:
+## Evaluation / Test
+### ScanNet Semantic Segmentation (BLS-OACNNs)
 ```bash
-sh scripts/test.sh -p python -d scannet -c semseg-bls-oacnns-v1m1-0-base -n bls_oacnns_run -w model_best
-```
+# Single GPU testing with best model
+sh scripts/test.sh -g 1 -p python -d scannet -c semseg-bls-oacnns-v1m1-0-base -n bls_oacnns_run -w model_best.pth
 
 ## 📄 License
 This project is released under the MIT License.
